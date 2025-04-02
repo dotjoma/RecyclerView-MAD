@@ -16,7 +16,11 @@ class MainActivity : AppCompatActivity() {
         rvList = findViewById(R.id.recyclerView)
         rvList.layoutManager = LinearLayoutManager(this)
 
-        val itemList = listOf(MyItem("Item 1"), MyItem("Item 2"), MyItem("Item 3"))
+        val itemList = listOf(
+            MyItem("Item 1"),
+            MyItem("Item 2"),
+            MyItem("Item 3")
+        )
 
         adapter = MyAdapter(itemList)
         rvList.adapter = adapter

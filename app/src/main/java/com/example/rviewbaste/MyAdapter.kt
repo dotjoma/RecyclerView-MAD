@@ -7,7 +7,7 @@ import android.widget.TextView
 import androidx.appcompat.view.menu.MenuView.ItemView
 import androidx.recyclerview.widget.RecyclerView
 
-class MyAdapter(private val itemList: MutableList<MyItem>) :
+class MyAdapter(private val itemList: List<MyItem>) :
     RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
         inner class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView),
                 View.OnClickListener, View.OnLongClickListener {

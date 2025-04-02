@@ -4,7 +4,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import androidx.appcompat.view.menu.MenuView.ItemView
 import androidx.recyclerview.widget.RecyclerView
 
 class MyAdapter(private val itemList: List<MyItem>) :
@@ -12,6 +11,7 @@ class MyAdapter(private val itemList: List<MyItem>) :
         inner class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView),
                 View.OnClickListener, View.OnLongClickListener {
                     val textViewItem: TextView = itemView.findViewById(R.id.tvItem)
+                    val textViewItem2 : TextView = itemView.findViewById(R.id.tvContact)
 
             override fun onClick(p0: View?) {
                 TODO("Not yet implemented")
@@ -31,6 +31,7 @@ class MyAdapter(private val itemList: List<MyItem>) :
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val currentItem = itemList[position]
         holder.textViewItem.text = currentItem.text
+        holder.textViewItem2.text = currentItem.contact
     }
 
     override fun getItemCount(): Int {

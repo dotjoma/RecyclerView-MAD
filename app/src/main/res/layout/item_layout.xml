@@ -10,8 +10,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
-            android:text="@string/primary"
+            android:text="Primary"
             android:textSize="10pt"
             />
+
+    <TextView
+            android:id="@+id/tvContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Secondary"
+            android:textSize="10pt"
+    />
 
 </LinearLayout>
